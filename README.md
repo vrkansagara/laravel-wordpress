@@ -1,1 +1,1 @@
-# Laravel WordPress
+# laravel-wordpress
