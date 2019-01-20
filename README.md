@@ -1,14 +1,14 @@
 # Laravel WordPress
 
 
-need to set up following things in to .env file
+Need to set up following things in to .env file
 
-VRKANSAGARA_LARAVEL_WORDPRESS_ENABLED=true
-DB_WOREDPRESS_PREFIX='wp_'
-DB_WOREDPRESS_CONNECTION='mysql-wordpress'
-DB_WORDPRESS_DATABASE='wordpress'
-DB_WORDPRESS_USERNAME='${DB_USERNAME}'
-DB_WORDPRESS_PASSWORD='${DB_PASSWORD}'
+    VRKANSAGARA_LARAVEL_WORDPRESS_ENABLED=true
+    DB_WOREDPRESS_PREFIX='wp_'
+    DB_WOREDPRESS_CONNECTION='mysql-wordpress'
+    DB_WORDPRESS_DATABASE='wordpress'
+    DB_WORDPRESS_USERNAME='${DB_USERNAME}'
+    DB_WORDPRESS_PASSWORD='${DB_PASSWORD}'
 
 
 
@@ -26,6 +26,7 @@ DB_WORDPRESS_PASSWORD='${DB_PASSWORD}'
         
         
 #Note
+
 DB_WOREDPRESS_CONNECTION key must not conflicts with other database key.
 
 
