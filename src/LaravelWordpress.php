@@ -206,8 +206,8 @@ class LaravelWordpress
     public function getPosts(array $status = ['publish'])
     {
 
-
-        $prefix = 'wp_';
+        $config = $this->getConfig();
+        $prefix = $config['db_prefix'];
         $wpTerms = $prefix . 'terms';
         $wpTermTaxonomy = $prefix . 'term_taxonomy';
         $wpTermRelationships = $prefix . 'term_relationships';
@@ -239,7 +239,8 @@ class LaravelWordpress
     {
 
 
-        $prefix = 'wp_';
+        $config = $this->getConfig();
+        $prefix = $config['db_prefix'];
         $wpTerms = $prefix . 'terms';
         $wpTermTaxonomy = $prefix . 'term_taxonomy';
         $wpTermRelationships = $prefix . 'term_relationships';
@@ -273,7 +274,8 @@ class LaravelWordpress
 
     public function getPostByCategories($postId = null, array $status = ['publish'])
     {
-        $prefix = 'wp_';
+        $config = $this->getConfig();
+        $prefix = $config['db_prefix'];
         $wpTerms = $prefix . 'terms';
         $wpTermTaxonomy = $prefix . 'term_taxonomy';
         $wpTermRelationships = $prefix . 'term_relationships';

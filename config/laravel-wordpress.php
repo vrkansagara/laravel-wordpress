@@ -13,10 +13,12 @@ return [
 
     'debug' => env('VRKANSAGARA_LARAVEL_WORDPRESS_DEBUG', false),
 
+    'db_prefix' => env('DB_WOREDPRESS_PREFIX', 'wp_'),
+
     'database' => [
-        'default' => env('DB_WOREDPRESS_CONNECTION', 'mysql'),
+        'default' => env('DB_WOREDPRESS_CONNECTION', 'mysql-wordpress'),
         'connections' => [
-            'mysql' => [
+            'mysql-wordpress' => [
                 'driver' => 'mysql',
                 'host' => env('DB_HOST', '127.0.0.1'),
                 'port' => env('DB_PORT', '3306'),
@@ -28,7 +30,7 @@ return [
                 'collation' => 'utf8mb4_unicode_ci',
                 'prefix' => '',
                 'prefix_indexes' => true,
-                'strict' => true,
+                'strict' => false,
                 'engine' => null,
             ],
         ]
