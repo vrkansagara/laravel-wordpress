@@ -1,0 +1,57 @@
+{
+  "name": "vrkansagara/laravel-wordpress",
+  "description": "Laravel module using WordPress as the backend API",
+  "keywords": [
+    "laravel",
+    "wordpress"
+  ],
+  "homepage": "https://vrkansagara.in/",
+  "type": "library",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Vallabh Kansagara",
+      "email": "vrkansagara@gmail.com",
+      "homepage": "https://vrkansagara.in/"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vrkansagara\\LaravelWordpress\\": "src/"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  },
+  "support": {
+    "email": "vrkansagara@gmail.com",
+    "issues": "https://github.com/vrkansagara/laravel-wordpress/issues",
+    "source": "https://github.com/vrkansagara/laravel-wordpress"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "branch-alias": {
+        "dev-master": "develop"
+      },
+      "providers": [
+        "Vrkansagara\\LaravelWordpress\\ServiceProvider"
+      ],
+      "aliases": {
+        "LaravelWordpress": "Vrkansagara\\LaravelWordpress\\Facade"
+      }
+    }
+  },
+  "require-dev": {
+    "laravel/framework": "5.5.x"
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
+    ]
+  }
+}
